@@ -1,7 +1,7 @@
 const { categories, emotions, products } = require("./data");
 const express = require("express");
 const app = express();
-const port = 5001;
+const port = process.env.PORT || 5001;
 
 const hbs = require("express-handlebars");
 
