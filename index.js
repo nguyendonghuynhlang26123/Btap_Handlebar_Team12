@@ -1,3 +1,4 @@
+const { categories, emotions, products } = require("./data");
 const express = require("express");
 const app = express();
 const port = 5000;
@@ -25,7 +26,14 @@ app.get("/task2", (req, res) => {
 });
 
 app.get("/task3", (req, res) => {
-  res.render("task3", { title: "TV", activeTab: { tv: true } });
+  let frontEndPrefixes = { title: "TV", activeTab: { tv: true } };
+  let context = {
+    ...frontEndPrefixes,
+    categories: categories,
+    products: products,
+  };
+  console.log(context);
+  res.render("task3", context);
 });
 
 app.listen(port, () => {
