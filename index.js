@@ -17,11 +17,12 @@ app.use(express.static(__dirname + "/public"));
 app.set("view engine", "hbs");
 
 app.get("/", (req, res) => {
-  res.render("index", { title: "home" });
+  res.render("index", { title: "home", activeTab: { home: true } });
 });
 
 app.get("/task2", (req, res) => {
-  res.render("task2", { title: "Test", quotePath: "/task2/default.jpg" });
+  
+res.render("task2", { title: "Test", quotePath: "/task2/default.jpg" });
 });
 
 app.get("/task2/:emotion", (req, res) => {
@@ -36,7 +37,7 @@ app.get("/task2/:emotion", (req, res) => {
 });
 
 app.get("/task3", (req, res) => {
-  res.render("task3", { title: "Test" });
+  res.render("task3", { title: "TV", activeTab: { tv: true } });
 });
 
 app.listen(port, () => {

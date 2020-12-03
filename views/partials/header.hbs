@@ -1,13 +1,15 @@
 <nav class="navbar navbar-default navbar-static-top navbar-inverse">
   <div class="container">
     <ul class="nav navbar-nav">
-      <li class="active">
+      <li {{#if home}}class="active" {{/if}}>
         <a href="/"><span class="glyphicon glyphicon-home"></span> Home</a>
       </li>
-      <li><a href="/task1">1. Jars Saving</a></li>
-      <li><a href="/task2">2. Inspiring Quotes</a></li>
-      <li><a href="/task3">3. TV Sales</a></li>
-      <li><a href="/task4">4. Zodiac Characteristics</a></li>
+      <li {{#if quote}}class="active" {{/if}}>
+        <a href="/task2">2. Inspiring Quotes</a>
+      </li>
+      <li {{#if tv}}class="active" {{/if}}>
+        <a href="/task3">3. TV Sales</a>
+      </li>
     </ul>
   </div>
 </nav>
