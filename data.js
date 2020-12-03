@@ -1,5 +1,5 @@
 /* task 2 */
-var emotions = [
+const emotions = [
   {
     title: "happy",
     imagePath: "/task2/happy.jpeg",
