@@ -1,5 +1,5 @@
 /* task 2 */
-var emotions = [
+const emotions = [
   {
       title: 'happy',
       imagePath: '/task2/happy.jpeg',
@@ -201,3 +201,5 @@ var zodiacs = [
     description: "Capricorn is a sign that represents time and responsibility, and its representatives are traditional and often very serious by nature. These individuals possess an inner state of independence that enables significant progress both in their personal and professional lives. They are masters of self-control and have the ability to lead the way, make solid and realistic plans, and manage many people who work for them at any time. They will learn from their mistakes and get to the top based solely on their experience and expertise. "
   }
 ];
+
+module.exports = emotions;
