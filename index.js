@@ -21,8 +21,7 @@ app.get("/", (req, res) => {
 });
 
 app.get("/task2", (req, res) => {
-  
-res.render("task2", { title: "Test", quotePath: "/task2/default.jpg" });
+  res.render("task2", { title: "Inspiring Quotes", quotePath: "/task2/default.jpg" });
 });
 
 app.get("/task2/:emotion", (req, res) => {
@@ -33,7 +32,7 @@ app.get("/task2/:emotion", (req, res) => {
       return;
     }
   });
-  res.render("task2", { title: "Test", quotePath: img });
+  res.render("task2", { title: "Inspiring Quotes", quotePath: img });
 });
 
 app.get("/task3", (req, res) => {
