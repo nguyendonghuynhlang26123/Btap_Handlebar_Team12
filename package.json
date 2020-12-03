@@ -1,0 +1,26 @@
+{
+  "name": "demo-handlebars",
+  "version": "1.0.0",
+  "description": "Team12_Bt Handlebar",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon index.js"
+  },
+  "keywords": [],
+  "author": "Nguyen Dang Huynh Long - Nguyen Thai Tan",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1",
+    "express-handlebars": "^5.2.0",
+    "nodemon": "^2.0.6"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nguyendonghuynhlang26123/Btap_Handlebar_Team12.git"
+  },
+  "bugs": {
+    "url": "https://github.com/nguyendonghuynhlang26123/Btap_Handlebar_Team12/issues"
+  },
+  "homepage": "https://github.com/nguyendonghuynhlang26123/Btap_Handlebar_Team12#readme"
+}
